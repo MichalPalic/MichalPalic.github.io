@@ -33,45 +33,25 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+  
+        <h1 class="logo"><a href="index.html">Michal Palič</a></h1>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+            <li><a class="nav-link scrollto" href="index.html#services">Skills</a></li>
+            <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
+            <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->
 
   <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
     <div class="overlay-mf"></div>
@@ -94,11 +74,11 @@
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
+      <div class="container" style="margin: auto;">
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-8" style="margin: auto;">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
@@ -122,31 +102,37 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4">
+         <div class="col-lg-8" style="margin: auto;">
             <div class="portfolio-info">
               <ul>
                 <li><strong>Category</strong>: Group Project</li>
                 <li><strong>Host</strong>: Imperial College London</li>
                 <li><strong>Project date</strong>: June, 2022</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/ICL-Year-2-Project-2021-2022/Vision">Github</a>Github</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/ICL-Year-2-Project-2021-2022/Vision">Github</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
                 <p>
-                    Autonomous Mars Rover (Winner: Top Second Year Group Project) June 2022
-                    Led development of a rover capable of autonomous navigation and mapping of simulated alien surface in a group
-                    of 7. Managed the project timeline through daily stand-up meetings, set targets and fostered compromises on
-                    module development time and direction between team members. Was responsible for the prototype of the video
-                    processing pipeline in Python OpenCV and its implementation in SystemVerilog. My key technical contributions
-                    included: A fast pipelined fixed point RGB to HSV converter, filtering/feature extraction using 2D convolution
-                    hardware and run-time pipeline reconfiguration using a NIOS II softcore CPU. The team took home the prize for 
-                    the best second year group project.
+                    For our Summer term year 2 group project I led the development of a rover capable of autonomous navigation and mapping of simulated alien surface in a group
+                    of 7. The project posed a mixture of difficulties on both a technical and a management level. But ultimately we prevailed and took home the 
+                    the prize for the best second year group project for the second year in a row.
+                </p><p>
+                    Throughout the project I took ownership of the vision system of the rover, which was based around a DE1-lite FPGA development board
+                    with a camera module. Hardware had to be developed on the FPGA in order to be able to identify the patterned objects especially in the context 
+                    of a noisy camera and unstable lighting conditions. I began the development process by instantiating the minimum required to get a video signal 
+                    that can be captured off of the FPGA and then iterating on filtering techniques using Open CV and Python to arrive at a workable vision pipeline.
+                </p><p>
+                    This pipeline was then implemented using System Verilog as the hardware description language of choice. The IP blocks developed included a A fast pipelined 
+                    fixed point RGB to HSV converter, filtering/feature extraction using 2D convolution, and automatic brightness and white balance adjustments. This hardware 
+                    was all controlled by a NIOS 2 CPU which managed the IP blocks and communicated with the rest of the system.
+                  </p><p>
+                    I also took initiative and managed the project timeline through daily stand-up meetings, set targets and fostered compromises on
+                    module development time and direction between team members. 
                 </p>
             </div>
           </div>
-
-        </div>
 
       </div>
     </section><!-- End Portfolio Details Section -->

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Project: Mars Rover</title>
+  <title>Digital System Design</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -58,12 +58,12 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="hero-title mb-4">Autonomous Mars Rover</h2>
+          <h2 class="hero-title mb-4">Digital System Design</h2>
           <ol class="breadcrumb d-flex justify-content-center">
             <li class="breadcrumb-item">
               <a href="index.html#hero">Home</a>
             </li>
-            <li class="breadcrumb-item active">Autonomous Mars Rover</li>
+            <li class="breadcrumb-item active">Digital System Design</li>
           </ol>
         </div>
       </div>
@@ -77,25 +77,12 @@
       <div class="container" style="margin: auto;">
 
         <div class="row gy-4">
-
           <div class="col-lg-8" style="margin: auto;">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/Rover/rover.jpg" alt="Our rover design">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Rover/arena.jpg" alt="Competitive rover arena">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Rover/wisharena.jpg" alt="Our discount rover arena replica">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/Rover/awards.jpg" alt="Our award ceremony">
+                  <img src="assets/img/graphics/6bcrop.png" alt="More complex raytraced scene">
                 </div>
 
               </div>
@@ -107,29 +94,22 @@
          <div class="col-lg-8" style="margin: auto;">
             <div class="portfolio-info">
               <ul>
-                <li><strong>Category</strong>: Group Project</li>
+                <li><strong>Category</strong>: Coursework</li>
                 <li><strong>Host</strong>: Imperial College London</li>
-                <li><strong>Project date</strong>: June, 2022</li>
-                <li><strong>Project URL</strong>: <a href="https://github.com/ICL-Year-2-Project-2021-2022/Vision">Github</a></li>
+                <li><strong>Project date</strong>: January - March 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/MPVP-Code/Compiler">Github</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
                 <p>
-                    For our Summer term year 2 group project I led the development of a rover capable of autonomous navigation and mapping of simulated alien surface in a group
-                    of 7. The project posed a mixture of difficulties on both a technical and a management level. But ultimately we prevailed and took home the 
-                    the prize for the best second year group project for the second year in a row.
+                  The graphics course at Imperial college wa an enlightening introduction into the topic, and engeged our knowledge through its
+                  coursework, throughout which we implemented a number of rendering and shading approaches using GLSL. It was an exciting experience, seeing
+                  my code come to life, and my interest in this topic remains high.
+
                 </p><p>
-                    Throughout the project I took ownership of the vision system of the rover, which was based around a DE1-lite FPGA development board
-                    with a camera module. Hardware had to be developed on the FPGA in order to be able to identify the patterned objects especially in the context 
-                    of a noisy camera and unstable lighting conditions. I began the development process by instantiating the minimum required to get a video signal 
-                    that can be captured off of the FPGA and then iterating on filtering techniques using Open CV and Python to arrive at a workable vision pipeline.
-                </p><p>
-                    This pipeline was then implemented using System Verilog as the hardware description language of choice. The IP blocks developed included a A fast pipelined 
-                    fixed point RGB to HSV converter, filtering/feature extraction using 2D convolution, and automatic brightness and white balance adjustments. This hardware 
-                    was all controlled by a NIOS 2 CPU which managed the IP blocks and communicated with the rest of the system.
-                  </p><p>
-                    I also took initiative and managed the project timeline through daily stand-up meetings, set targets and fostered compromises on
-                    module development time and direction between team members. 
+                  In the gallery you can see the final outcome, a raytracer featuring colored point sources in space, use of textures within the enviroment map and 
+                  soft shadows. I worked up to this outcome by first building a simple raytracer with just reflective surfaces and a light point source. Prior to this still,
+                  we explored traditional rasterization based approaches to rendering, with Gouraud and Phong shading.  
                 </p>
 
                 <br> <br> <br>

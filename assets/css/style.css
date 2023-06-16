@@ -1558,7 +1558,7 @@ button:focus {
     width: 5px;
     background: rgba(255, 255, 255, 0.2);
     position: absolute;
-    left: 46%;
+    left: 0%;
     transform: translateX(-50%);
     top: -5px; }
   .tabs_inner .tab-content .tab-pane .list li {
@@ -1571,7 +1571,7 @@ button:focus {
       display: block;
       background: rgba(255, 255, 255, 0.2);
       position: absolute;
-      left: 46%;
+      left: 0%;
       top: 30px;
       transform: translateX(-50%); }
       .tabs_inner .tab-content .tab-pane .list li span:before {

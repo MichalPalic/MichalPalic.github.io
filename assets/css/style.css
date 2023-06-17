@@ -912,6 +912,7 @@ a:hover {
 .counter-box {
   color: #fff;
   text-align: center;
+  margin-left: 145%;
 }
 
 @media (min-width: 577px) {
